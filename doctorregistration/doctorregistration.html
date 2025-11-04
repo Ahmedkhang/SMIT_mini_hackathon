@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Registration Form</title>
+    
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="h-screen">
+         <nav class="h-20 bg-[#2F80ED] text-[#2D3748] flex justify-between items-center p-5">
+            <div class="w-[15%] text-white text-xl h-full font-bold text-xl flex justify-center items-center">
+                <h1 class="pl-2">Clinic.com</h1>
+            </div>
+            <div>
+                <a href="/appointment/appointment.html">
+
+                    <button onclick="bookNow()" class="bg-[#2FB5A3] p-1 md:p-2 text-white font-bold cursor-pointer hover:bg-[#2F95A8] duration-300">Book Now</button>
+                </a>
+                 <a href="/signup/signup.html">
+
+                     <button id="signup" class="bg-[#2FB5A3] p-1 md:p-2 text-white font-bold cursor-pointer hover:bg-[#2F95A8] duration-300">Signup</button>
+                 </a>
+              
+              <a href="/login/login.html">
+
+                  <button id="login" class="bg-[#2FB5A3] p-2 text-white font-bold cursor-pointer hover:bg-[#2F95A8] duration-300">Login</button>
+              </a>
+                <button id="logout" class=" bg-[#2FB5A3] p-1 md:p-2 text-white font-bold cursor-pointer hover:bg-[#2F95A8] duration-300">Logout</button>
+            </div>
+        </nav>
+
+          <div class="h-[90%] flex bg-[#F5F8FA]  justify-center items-center">
+             <div class="w-xl h-100 md:h-130 bg-[#FFFFFF] rounded-md shadow-md flex  flex-col gap-1 md:gap-4 items-center justify-center">
+                <h1 class="font-bold text-xl text-center md:text-3xl mb-2">Doctor Registration Form</h1>
+                <input type="text" placeholder="Dr. Id" id="id" class="border-1 w-54 p-1">
+               <input type="text" id="name" placeholder="Dr. Name" required class="border-1 w-54 p-1">
+               <input type="text" placeholder="Dr. Age" id="age" class="border-1 w-54 p-1">
+               <input type='text' id="experience" placeholder="Dr. Experience" class="border-1 w-54 p-1">
+               <input type="text" id="category" placeholder="Dr. Category" class="border-1 w-54 p-1">
+               <input type="text" placeholder="Dr. timing" id="timing" class="border-1 w-54 p-1">
+               <input type="text" id="days", placeholder="Dr. Sitting Days" class="border-1 w-54 p-1">
+               <!-- <input type="datetime-local" name="" id="datetime" required class="border-1 w-54 p-1"> -->
+                <!-- <textarea name="" id="reason" placeholder="Visit Reason" class="border-1 w-54 min-h-30 p-2"></textarea> -->
+                <button onclick="addDoctor()" class="bg-[#2FB5A3] p-2 px-10 text-white font-bold cursor-pointer hover:bg-[#2F95A8] duration-300" >Register</button>
+             </div>
+        </div>
+      
+ 
+
+    </div>
+
+    <script type="module" src="/doctorregistration/script.js"></script>
+</body>
+</html>
