@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-white">
+
+<!-- Nav -->
+<nav class="h-20 bg-[#2F80ED] text-white flex justify-between items-center px-5">
+    <h1 class="font-bold text-xl">Clinic.com</h1>
+    <div class="flex gap-1">
+        <a href="/appointment/appointment.html">
+            <button class="bg-[#2FB5A3] p-1 md:px-4 py-1 md:px-5 md:py-2 text-white font-bold hover:bg-[#2F95A8] duration-200">Book Now</button>
+        </a>
+        <a href="/signup/signup.html">
+            <button id="signup" class="bg-[#2FB5A3] p-1 sm:px-4 sm:py-1 md:px-5 md:py-2 text-white font-bold hover:bg-[#2F95A8] duration-200">Signup</button>
+        </a>
+        <a href="/login/login.html">
+            <button id="login" class="bg-[#2FB5A3] p-1 sm:px-4 sm:py-1 md:px-5 md:py-2 text-white font-bold hover:bg-[#2F95A8] duration-200">Login</button>
+        </a>
+        <button id="logout" class="bg-[#2FB5A3] p-1 md:px-4 sm:py-1 md:px-5 md:py-2 text-white font-bold hover:bg-[#2F95A8] duration-200">Logout</button>
+    </div>
+</nav>
+
+<!-- Hero -->
+<section class="flex flex-col md:flex-row items-center justify-between px-6 py-16 gap-6">
+    <div class="text-center md:text-left md:w-1/2">
+      <h1 class="font-bold text-3xl md:text-5xl">Welcome To <span class="text-[#2FB5A3]">Clinic.com</span></h1>
+        <h2 class="text-xl md:text-3xl mt-2 font-semibold">Smart Healthcare, For Everyone</h2>
+        <p class="text-lg md:text-xl mt-3">
+            Book your slot <span class="text-[#2FB5A3] font-bold">online</span>, skip lines, and get expert care fast.
+        </p>
+    </div>
+
+    <div class="md:w-1/2 flex justify-center">
+        <img src="/images/martha-dominguez-de-gouveia-nMyM7fxpokE-unsplash.jpg" 
+             class="w-full max-w-[500px] h-80 md:h-[500px] object-cover rounded-lg shadow" alt="">
+    </div>
+</section>
+
+<!-- Services -->
+<h1 class="text-center text-3xl md:text-4xl font-bold mt-10">Our Services</h1>
+<section id="services" class="flex flex-col md:flex-row py-16 px-5 gap-8">
+
+    <div class="md:w-1/2 space-y-8">
+        <p class="text-lg md:text-xl">
+            We provide trusted medical consultations, verified doctors and smooth appointment booking for patients seeking reliable healthcare.
+        </p>
+
+        <div>
+            <h2 class="text-2xl font-bold">General Consultation</h2>
+            <p class="text-lg">Get medical advice from certified doctors.</p>
+        </div>
+
+        <div>
+            <h2 class="text-2xl font-bold">Specialist Appointments</h2>
+            <p class="text-lg">Neurologists, Dermatologists, Cardiologists & more.</p>
+        </div>
+
+        <div>
+            <h2 class="text-2xl font-bold">Online Booking</h2>
+            <p class="text-lg">Book your appointment in minutes — no waiting.</p>
+        </div>
+
+        <div>
+            <h2 class="text-2xl font-bold">Follow-up Care</h2>
+            <p class="text-lg">Continuous care for long-term treatment.</p>
+        </div>
+    </div>
+
+    <div class="md:w-1/2">
+        <img src="/images/services.jpg" 
+             class="w-full h-80 md:h-[500px] object-cover rounded-lg shadow" alt="">
+    </div>
+</section>
+
+<!-- About -->
+<h1 class="text-center text-3xl md:text-4xl font-bold mt-10">About Clinic.com</h1>
+<section id="about" class="flex flex-col sm:flex-row py-16 px-5 gap-8">
+
+    <div class="sm:w-1/2 space-y-8">
+        <p class="text-lg md:text-xl">
+            Clinic.com is a trusted digital healthcare platform connecting patients with licensed doctors securely and quickly.
+        </p>
+
+        <div>
+            <h2 class="text-2xl font-bold">Our Mission</h2>
+            <p class="text-lg">Deliver fast, convenient & reliable healthcare.</p>
+        </div>
+
+        <div>
+            <h2 class="text-2xl font-bold">Our Vision</h2>
+            <p class="text-lg">Making medical care simple & accessible for all.</p>
+        </div>
+
+        <div>
+            <h2 class="text-2xl font-bold">Why Choose Us?</h2>
+            <ul class="list-disc ml-5 text-lg space-y-1">
+                <li>Verified doctors</li>
+                <li>Fast appointment booking</li>
+                <li>User-friendly platform</li>
+                <li>Secure and private</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="sm:w-1/2">
+        <img src="/images/doctors.jpg" 
+             class="w-full h-80 md:h-[500px] object-cover rounded-lg shadow" alt="">
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-[#2F80ED] text-white mt-10">
+  <div class="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div>
+      <h2 class="text-2xl font-bold">Clinic.com</h2>
+      <p class="mt-3 text-sm">
+        Smart healthcare — expert doctors, easy bookings, fast support.
+      </p>
+    </div>
+
+    <div>
+      <h3 class="font-semibold text-lg mb-2">Quick Links</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="/" class="hover:underline">Home</a></li>
+        <li><a href="/appointment/appointment.html" class="hover:underline">Book Appointment</a></li>
+        <li><a href="#services" class="hover:underline">Services</a></li>
+        <li><a href="#about" class="hover:underline">About Us</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="font-semibold text-lg mb-2">Contact</h3>
+      <ul class="space-y-2 text-sm">
+        <li>Email: support@clinic.com</li>
+        <li>Phone: +92 300 0000000</li>
+        <li>Karachi, Pakistan</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="bg-[#1f6ed1] py-3 text-center text-sm">
+    © 2025 Clinic.com — All Rights Reserved
+  </div>
+</footer>
+
+<script type="module" src="/script.js"></script>
+
+</body>
+</html>
