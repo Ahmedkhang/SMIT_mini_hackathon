@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Appointments</title>
+    
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="h-screen">
+         <nav class="h-20 bg-[#2F80ED] text-[#2D3748] flex justify-between items-center p-5">
+            <div class="w-[15%] text-white text-lg pl-5 md:text-xl h-full font-bold text-xl flex justify-center items-center">
+                <h1 class="pl-2">Clinic.com</h1>
+            </div>
+            <div>
+                <a href="/appointment/appointment.html">
+
+                    <button onclick="bookNow()" class="bg-[#2FB5A3] p-1 md:p-2 text-white font-bold cursor-pointer hover:bg-[#2F95A8] duration-300">Book Now</button>
+                </a>
+                 <a href="/signup/signup.html">
+
+                     <button id="signup" class="bg-[#2FB5A3] p-1 md:p-2 text-white font-bold cursor-pointer hover:bg-[#2F95A8] duration-300">Signup</button>
+                 </a>
+              
+              <a href="/login/login.html">
+
+                  <button id="login" class="bg-[#2FB5A3] p-2 text-white p-1 md:p-2 font-bold cursor-pointer hover:bg-[#2F95A8] duration-300">Login</button>
+              </a>
+                <button id="logout" onclick="logout()" class="hidden bg-[#2FB5A3] p-1 md:p-2  text-white font-bold cursor-pointer hover:bg-[#2F95A8] duration-300">Logout</button>
+            </div>
+        </nav>
+
+
+        <div class="overflow-x-auto mt-5">
+  <table class="min-w-full border border-gray-200 rounded-lg">
+    <thead class="bg-blue-600 text-white">
+      <tr>
+        <th class="py-2 px-4 text-left">Patient Name</th>
+        <th class="py-2 px-4 text-left">Doctor</th>
+        <th class="py-2 px-4 text-left">Date & Time</th>
+        <th class="py-2 px-4 text-left">Reason</th>
+        <th class="py-2 px-4 text-left">Status</th>
+      </tr>
+    </thead>
+    <tbody id="appointment-container" class="divide-y divide-gray-200"></tbody>
+  </table>
+</div>
+    </div>
+    <script type="module" src="/my-appointments/script.js"></script>
+</body>
+</html>
