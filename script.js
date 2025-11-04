@@ -1,53 +1,3 @@
-// let doctors = [
-    
-//   {
-//     id: '001',
-//     name: 'Dr. Afzal Khan Lahori',
-//     age: '54',
-//     experience: '28',
-//     category: 'Neurologist',
-//     timinng: '10:00am - 1:00pm',
-//     image:'',
-//     days: ['Monday', 'Tuesday', 'Wednesday']
-//   },
-//   {
-//     id: '002',
-//     name: 'Dr. Ayesha Siddiqui',
-//     age: '42',
-//     experience: '15',
-//     category: 'Cardiologist',
-//     timinng: '11:00am - 3:00pm',
-//     days: ['Monday', 'Thursday', 'Friday']
-//   },
-//   {
-//     id: '003',
-//     name: 'Dr. Hamza Sheikh',
-//     age: '39',
-//     experience: '12',
-//     category: 'Orthopedic Surgeon',
-//     timinng: '9:00am - 12:00pm',
-//     days: ['Tuesday', 'Wednesday', 'Saturday']
-//   },
-//   {
-//     id: '004',
-//     name: 'Dr. Fatima Rizwan',
-//     age: '47',
-//     experience: '20',
-//     category: 'Dermatologist',
-//     timinng: '1:00pm - 5:00pm',
-//     days: ['Wednesday', 'Thursday', 'Friday']
-//   },
-//   {
-//     id: '005',
-//     name: 'Dr. Salman Farooq',
-//     age: '50',
-//     experience: '25',
-//     category: 'General Physician',
-//     timinng: '10:00am - 2:00pm',
-//     days: ['Monday', 'Tuesday', 'Saturday']
-//   }
-// ];
-
 
   // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/12.5.0/firebase-app.js";
@@ -124,4 +74,5 @@ window.logout = () => {
   catch((err) => {
     alert('Something went wrong!!',err)
   })
+
 }
