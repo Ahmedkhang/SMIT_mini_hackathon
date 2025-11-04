@@ -115,3 +115,14 @@ window.addDoctor = () => {
     
 
 } 
+
+
+window.logout = () => {
+  signOut(auth).then(() => {
+     alert('Logout Succcessful!!')
+     window.location.replace('/login/login.html')
+  }).
+  catch((err) => {
+    alert('Something went wrong!!',err)
+  })
+}
