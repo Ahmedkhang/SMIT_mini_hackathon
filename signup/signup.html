@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup - Doctor Appointment App</title>
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="text-[#2D3748] border-[#D1D5DB] h-screen flex justify-center items-center bg-[#F5F8FA]">
+       <div class="w-lg h-[60%] bg-[#FFFFFF] rounded-md shadow-md flex justify-center items-center ">
+
+           
+           <div class="grid grid-cols-1 gap-5">
+            <h1 class="text-center font-bold text-2xl">Shapar Clinic</h1>
+
+            <input type="email" id="email" placeholder="Email" class="border-1 p-2">
+            <input type="password" id="password" placeholder="Password" class="border-1 p-2">
+            <!-- <select name="" id="">
+                <option value="patient">Patient</option>
+                <option value="doc">Doctor</option>
+            </select> -->
+            <button onclick="signup()" class="bg-blue-500 text-white p-2 cursor-pointer">Signup</button>
+        </div>
+       </div>
+    </div>
+
+    <script type="module" src="/signup/script.js"></script>
+</body>
+</html>
