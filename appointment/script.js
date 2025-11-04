@@ -1,6 +1,6 @@
   // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/12.5.0/firebase-app.js";
-  import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/12.5.0/firebase-auth.js"
+  import { getAuth, onAuthStateChanged,signOut } from "https://www.gstatic.com/firebasejs/12.5.0/firebase-auth.js"
   import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.5.0/firebase-analytics.js";
   // import { push,set,ref } from "https://www.gstatic.com/firebasejs/12.5.0/firebase-auth.js"
   import  { getDatabase,push,ref,get, onValue } from "https://www.gstatic.com/firebasejs/12.5.0/firebase-database.js"
@@ -210,4 +210,5 @@ window.logout = () => {
   catch((err) => {
     alert('Something went wrong!!',err)
   })
+
 }
